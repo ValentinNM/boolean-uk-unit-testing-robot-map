@@ -25,8 +25,8 @@ describe("Test the movement functions", () => {
     })
 
     it("should not cross the boundaries", () => { 
-      const currentPosition = { x: 9, y: 5 };
-      const finalPosition = { x: 9, y: 5 }
+      const currentPosition = { x: 10, y: 5 };
+      const finalPosition = { x: 10, y: 5 }
 
       expect(moveRight(currentPosition)).toEqual(finalPosition)
     })
@@ -44,7 +44,7 @@ describe("Test the movement functions", () => {
       const currentPosition = { x: 5 , y: 9};
       const finalPosition = { x: 5 , y: 9};
 
-      expect(moveUp(currentPosition)).toEqual(moveUp(finalPosition))
+      expect(moveUp(currentPosition)).toEqual(finalPosition)
     })
   })
 
@@ -53,7 +53,7 @@ describe("Test the movement functions", () => {
       const currentPosition = { x:5 , y: 5};
       const finalPosition = { x:5 , y: 4};
       
-      expect(moveDown(currentPosition)).toEqual(moveDown(finalPosition))
+      expect(moveDown(currentPosition)).toEqual(finalPosition)
     })
 
     it("should not cross the boundaries", () => { 
