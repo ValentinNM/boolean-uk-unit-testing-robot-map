@@ -31,6 +31,17 @@ const moveUp = (currentPosition) => {
   return newPosition
 }
 
+const moveDown = (currentPosition) => { 
+  if(currentPosition.y === 0) return currentPosition;
+
+  const newPosition = { 
+    ...currentPosition,
+    y : currentPosition.y - 1
+  }
+
+  return newPosition
+}
+
 module.exports = {
-  moveLeft, moveRight, moveUp
+  moveLeft, moveRight, moveUp, moveDown
 };
