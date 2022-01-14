@@ -31,4 +31,20 @@ describe("Test the movement functions", () => {
       expect(moveRight(currentPosition)).toEqual(finalPosition)
     })
   })
+
+  describe("The move up function", () => {
+    it("should move the robot up", () => { 
+      const currentPosition = { x: 5 , y: 4 };
+      const finalPosition = { x: 5 , y: 5 };
+
+      expect(moveUp(currentPosition)).toEqual(finalPosition)
+    })
+
+    it("should not cross the boundaries", () => {
+      const currentPosition = { x: 5 , y: 9};
+      const finalPosition = { x: 5 , y: 9};
+
+      expect(moveUp(currentPosition)).toEqual(moveUp(finalPosition))
+    })
+  })
 });
