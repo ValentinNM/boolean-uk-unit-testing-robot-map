@@ -9,6 +9,16 @@ const moveLeft = (currentPosition) => {
   return newPosition;
 };
 
+// const moveRight = (currentPosition) => { 
+//   if (currentPosition.x === 0 && currentPosition.y === 0) return currentPosition;
+
+//   const newPosition = { 
+//     ...currentPosition,
+//     x: currentPosition.x + 1
+
+//   }
+// }
+
 module.exports = {
   moveLeft
 };
